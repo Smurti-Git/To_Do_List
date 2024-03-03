@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="parent"></div>
+    <div class="container">
+        <h2>My To-Do List</h2>
+        <div id="to-do-head"><br>
+            <form name="myForm" onsubmit="return validateForm()">
+               <input type="text" name="fname" id="newTaskInput" placeholder="Create New Task" accesskey="s">
+                <button type="submit"><img src="New folder/button.png" alt=""></button>
+            </form>
+        </div>
+        <br>
+        <div id="todo-list">Task list: <br></div><br>
+        <div id="total-tasks"><span></span></div>
+    </div>
+
+    <script src="app.js"> </script>
+    <script src="update.js"> </script>
+</body>
+</html>
